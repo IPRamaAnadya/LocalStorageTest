@@ -30,6 +30,12 @@
             numberEl.innerText = sampleText + numberInput.value;
         });
 
+        document.addEventListener('message', message => {
+            const datas = JSON.parse(message.datas);
+            alert("message recieved");
+            numberEl.innerText = sampleText + datas.email;
+        })
+
 
     </script>
 </body>
