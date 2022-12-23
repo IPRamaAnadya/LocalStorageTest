@@ -13,6 +13,10 @@
     <input type="text" id="numberInput">
     <button type="submit" id="saveBtn">Save</button>
 
+    <button type="submit" id="triggredEventBtn">Try</button>
+
+    <p>No Event</p>
+
 
     <script>
         var numberEl = document.getElementById("number");
@@ -35,6 +39,14 @@
             alert("message recieved");  
             numberEl.innerText = sampleText + datas.email;
         })
+        
+        document.getElementById("triggredEventBtn").addEventListener('click', function() {
+            document.dispatchEvent(new MessageEvent('message', {
+              data: {"email": "partner_r3@a.bc", "password": "qweasd2022"}, 
+              origin: "/"
+            }));
+        });
+        
 
 
     </script>
