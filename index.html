@@ -32,7 +32,7 @@
 
         document.addEventListener('message', message => {
             const datas = JSON.parse(message.datas);
-            alert("message recieved");
+            alert("message recieved");  
             numberEl.innerText = sampleText + datas.email;
         })
 
