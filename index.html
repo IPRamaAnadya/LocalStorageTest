@@ -15,7 +15,7 @@
 
     <button type="submit" id="triggredEventBtn">Try</button>
 
-    <p>No Event</p>
+    <p id="eventEl">No Event</p>
 
 
     <script>
@@ -36,7 +36,8 @@
 
         document.addEventListener('message', message => {
             console.log("message received");
-            console.log(message);
+
+            document.getElementById("eventEl").innerText = message.data.email
         })
         
         document.getElementById("triggredEventBtn").addEventListener('click', function() {
