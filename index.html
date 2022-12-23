@@ -35,9 +35,8 @@
         });
 
         document.addEventListener('message', message => {
-            const datas = JSON.parse(message.datas);
-            alert("message recieved");  
-            numberEl.innerText = sampleText + datas.email;
+            console.log("message received");
+            console.log(message);
         })
         
         document.getElementById("triggredEventBtn").addEventListener('click', function() {
