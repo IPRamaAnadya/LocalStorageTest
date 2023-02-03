@@ -17,6 +17,8 @@
 
     <p id="eventEl">No Event</p>
 
+    <button id="downloadPDF">Download pdf</button>
+
 
     <script>
         var numberEl = document.getElementById("number");
@@ -47,6 +49,9 @@
             }));
         });
         
+        document.getElementById("downloadPDF").addEventListener("click", function() {
+            window.location.href = "sample.pdf";
+        });
 
 
     </script>
