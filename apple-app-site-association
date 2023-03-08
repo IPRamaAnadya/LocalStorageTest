@@ -5,6 +5,7 @@
             {
                 "appID": "ACXC5YU5UE.com.monday.UniversalLink",
                 "paths": [
+                    "*",
                     "/LocalStorageTest/*"
                 ]
             }
